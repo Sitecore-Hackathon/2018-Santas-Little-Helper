@@ -4,13 +4,15 @@ using System.Web.Http;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
+using System.Web.Mvc;
+using System.Web.Routing;
 
 namespace SLH.Feature.Location.Controllers
 {
-    public class LocationApiController : ApiController
+    public class LocationApiController : Controller
     {
         [System.Web.Mvc.HttpPost]
-        public IHttpActionResult UpdatePoi(string id, string top, string left)
+        public ActionResult UpdatePoi(string id, string top, string left)
         {
             Database database = Factory.GetDatabase("master");
 

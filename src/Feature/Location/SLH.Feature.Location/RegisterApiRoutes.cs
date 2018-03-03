@@ -11,8 +11,6 @@ namespace SLH.Feature.Location
         {
             //Register Custom Routes
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            
-            MvcHandler.DisableMvcResponseHeader = true;
         }
     }
 }
