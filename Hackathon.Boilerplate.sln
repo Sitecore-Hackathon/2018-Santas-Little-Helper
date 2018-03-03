@@ -21,13 +21,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}"
 	ProjectSection(SolutionItems) = preProject
+		documentation\Installation_Guide.md = documentation\Installation_Guide.md
 		documentation\README.md = documentation\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854}"
 	ProjectSection(SolutionItems) = preProject
+		documentation\images\AddSiteFeature.PNG = documentation\images\AddSiteFeature.PNG
+		documentation\images\Data.png = documentation\images\Data.png
 		documentation\images\deal-with-it.gif = documentation\images\deal-with-it.gif
+		documentation\images\ExperienceEditor1.png = documentation\images\ExperienceEditor1.png
+		documentation\images\ExperienceEditor2.png = documentation\images\ExperienceEditor2.png
+		documentation\images\ExperienceEditor3.png = documentation\images\ExperienceEditor3.png
+		documentation\images\ExperienceEditor4.png = documentation\images\ExperienceEditor4.png
+		documentation\images\ExperienceEditor5.png = documentation\images\ExperienceEditor5.png
+		documentation\images\ExperienceEditor51.png = documentation\images\ExperienceEditor51.png
+		documentation\images\ExperienceEditor6.png = documentation\images\ExperienceEditor6.png
+		documentation\images\ExperienceEditor7.png = documentation\images\ExperienceEditor7.png
+		documentation\images\ExperienceEditor8.png = documentation\images\ExperienceEditor8.png
+		documentation\images\FeatureLocation.PNG = documentation\images\FeatureLocation.PNG
 		documentation\images\hackathon.png = documentation\images\hackathon.png
+		documentation\images\InstallPackage.png = documentation\images\InstallPackage.png
+		documentation\images\LocationPOI.png = documentation\images\LocationPOI.png
+		documentation\images\poi.png = documentation\images\poi.png
+		documentation\images\POIType.png = documentation\images\POIType.png
+		documentation\images\PoiTypeSetup.png = documentation\images\PoiTypeSetup.png
+		documentation\images\SelectFeatures.png = documentation\images\SelectFeatures.png
+		documentation\images\SelectSite.PNG = documentation\images\SelectSite.PNG
+		documentation\images\Toolbox.png = documentation\images\Toolbox.png
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Location", "Location", "{269AB786-E69D-429A-9652-A4C9852A3CF8}"

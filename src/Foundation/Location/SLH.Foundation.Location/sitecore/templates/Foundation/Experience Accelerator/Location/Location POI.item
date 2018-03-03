@@ -18,6 +18,13 @@ content-length: 38
 
 {8F9A4498-3F37-48A2-8811-7AA3A7E5EAFC}
 ----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{CC0D3A6B-CA84-408E-8185-E6EA562D16A4}
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -27,7 +34,7 @@ office/32x32/pin.png
 ----version----
 language: en
 version: 1
-revision: 3f45b6ea-4056-4067-a5a7-64d80b6a6277
+revision: 97bcf105-216b-4955-98ca-4d6552b01d28
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3f45b6ea-4056-4067-a5a7-64d80b6a6277
+97bcf105-216b-4955-98ca-4d6552b01d28
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T032023Z
+20180303T193408Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
