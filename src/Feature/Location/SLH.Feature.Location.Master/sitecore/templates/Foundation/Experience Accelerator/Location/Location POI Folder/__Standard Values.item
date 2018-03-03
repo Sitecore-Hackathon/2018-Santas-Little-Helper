@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {C3F196F4-C9CE-4D1F-B667-A83EE1244DCF}
+database: master
+path: /sitecore/templates/Foundation/Experience Accelerator/Location/Location POI Folder/__Standard Values
+parent: {B4E2C81B-2701-4E41-889E-58A1B0F0D7A9}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {B4E2C81B-2701-4E41-889E-58A1B0F0D7A9}
+templatekey: Location POI Folder
+created: 20180303T031537Z
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{AEC7B78C-42ED-4181-A862-C212F8838AFE}|{B4E2C81B-2701-4E41-889E-58A1B0F0D7A9}
+----version----
+language: en
+version: 1
+revision: 9c062c4f-f343-4aa9-92d2-5543817c311c
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150715T121032Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9c062c4f-f343-4aa9-92d2-5543817c311c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180303T032247Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
