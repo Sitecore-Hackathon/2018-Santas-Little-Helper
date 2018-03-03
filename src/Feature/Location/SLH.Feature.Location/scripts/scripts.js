@@ -1,8 +1,9 @@
 ﻿var j = jQuery.noConflict();
+var postUrl = "ProductImage.aspx/SavePoI";
 var postUpdateUrl = "slh_api/locationApi/UpdatePoi";
 
 //containers
-var classImageMap = ".map-image";
+var classImageMap = ".poi-map__img";
 var dialogCreate = "div#dialogCreate";
 var dialogInfo = "div#dialogInfo";
 
@@ -12,6 +13,8 @@ var spanInfo = "span#spanInfo";
 
 //form fields
 var txtTitle = "#txtTitle";
+var txtDescription = "#txtDescription";
+var txtAlignment = "#selectAlignment";
 var txtTop = "#txtTop";
 var txtLeft = "#txtLeft";
 
@@ -24,9 +27,12 @@ var fromName = "mapsForm";
 
 var debug = false;
 
+
 function OnFailure(response) {
     console.log(response);
+    showInfoMessage(response.responseText);
 }
+
 
 function updateData(id, top, left) {
 
@@ -34,11 +40,11 @@ function updateData(id, top, left) {
         type: "POST",
         url: postUpdateUrl,
         data:
-            "{" +
-                "id: \"" + id + "\"," +
-                "top: \"" + top + "\"," +
-                "left: \"" + left + "\"" +
-                " }",
+        "{" +
+        "id: \"" + id + "\"," +
+        "top: \"" + top + "\"," +
+        "left: \"" + left + "\"" +
+        " }",
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         failure: OnFailure,
@@ -49,6 +55,7 @@ function updateData(id, top, left) {
 //document - ready
 j(document).ready(function () {
     
+
     j(".click").on("click",
         function (e) {
             e.preventDefault();
@@ -66,63 +73,60 @@ j(document).ready(function () {
 
     // target elements with the "draggable" class
     interact('.draggable')
-		.draggable({
-		    // enable inertial throwing
-		    inertia: true,
-		    // keep the element within the area of it's parent
-		    restrict: {
-		        restriction: "parent",
-		        endOnly: true,
-		        elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
-		    },
-		    // enable autoScroll
-		    autoScroll: true,
+        .draggable({
+            // enable inertial throwing
+            inertia: true,
+            // keep the element within the area of it's parent
+            restrict: {
+                restriction: "parent",
+                endOnly: true,
+                elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+            },
+            // enable autoScroll
+            autoScroll: true,
 
-		    // call this function on every dragmove event
-		    onstart: function (event) {
-		        var anchor = event.target.querySelector("a");
-		        j(anchor).addClass('no-click');
-		    },
-		    onmove: dragMoveListener,
-		    onend: function (event) {
+            // call this function on every dragmove event
+            onstart: function (event) {
+                var anchor = event.target.querySelector("a");
+                j(anchor).addClass('no-click');
+            },
+            onmove: dragMoveListener,
+            onend: function (event) {
 
-		        var id = event.target.getAttribute('data-id');
-		        var top = event.target.getAttribute('data-y') * 100 / j('.map-image').height();
-		        var left = event.target.getAttribute('data-x') * 100 / j('.map-image').width();
+                var id = event.target.getAttribute('data-id');
+                var top = event.target.getAttribute('data-y');//(event.target.getAttribute('data-y')) * 100 / j('.map-image').height();
+                var left = event.target.getAttribute('data-x'); //(event.target.getAttribute('data-x')) * 100 / j('.map-image').width();
 
-		        updateData(id, top, left);
+                updateData(id, top, left);
 
-		        var anchor = event.target.querySelector("a");
-		        j(anchor).removeClass('no-click');
-		    }
-		});
+                var anchor = event.target.querySelector("a");
+                j(anchor).removeClass('no-click');
+            }
+        });
 });
 
 function dragMoveListener(event) {
     var target = event.target,
         // keep the dragged position in the data-x/data-y attributes
-        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
-        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx * 100 / j(classImageMap).width(),
+        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy * 100 / j(classImageMap).height();
 
 
-    var xp = x - j(event.target).width() / 2;
-    var yp = y - j(event.target).height();
+    var xp = x - j(event.target).width() * 100 / j(classImageMap).width();
+    var yp = y - j(event.target).height() * 100 / j(classImageMap).height();
 
-    target.style.top = '';
-    target.style.left = '';
+    target.style.top = y + "%";
+    target.style.left = x + "%";
 
     // translate the element
-    target.style.webkitTransform =
-        target.style.transform =
-        'translate(' + xp + 'px, ' + yp + 'px)';
+    //target.style.webkitTransform =
+    //    target.style.transform =
+    //    'translate(' + xp + 'px, ' + yp  + 'px)';
 
-    // update the posiion attributes
+    // update the position attributes
     target.setAttribute('data-x', x);
     target.setAttribute('data-y', y);
 }
 
 // this is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener;
-
-
-

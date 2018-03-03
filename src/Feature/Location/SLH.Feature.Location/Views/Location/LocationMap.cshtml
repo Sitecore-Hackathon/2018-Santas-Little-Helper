@@ -14,28 +14,25 @@
 
         <div class="poi-map__container">
             <div class="poi-map__wrapper">
-               
-                <img src="@Model.ImageUrl" alt="Missing Image" class = "poi-map__img" />
-                
+
+                <img src="@Model.ImageUrl" alt="Missing Image" class="poi-map__img" />
+
                 @if (Model.PoiItems != null && Model.PoiItems.Any())
                 {
                     <!-- Render POI items -->
                     foreach (var poiItem in Model.PoiItems)
                     {
-                        <div data-id="@poiItem.Id" class="poi-map__poi poi-map__poi--no-images draggable" style="top: @poiItem.Top%; left: @poiItem.Left%;" data-x="@poiItem.Left/100*@Model.ImageWidth" data-y="@poiItem.Top/100*@Model.ImageHeight">
+                        <div class="poi-map__poi poi-map__poi--no-images draggable" style="top: @poiItem.Top%; left: @poiItem.Left%" data-id="@poiItem.Id" data-x="@poiItem.Left" data-y="@poiItem.Top">
                             @if (!string.IsNullOrWhiteSpace(poiItem.Title))
                             {
                                 <h3 class="poi-map__poi-title">@poiItem.Title</h3>
                             }
-                            
-                            <span><i class="fa @poiItem.IconClass" aria-hidden="true"></i></span>
+                            <div class="fa @poiItem.IconClass"></div>
                         </div>
                     }
                 }
-                
+
             </div>
         </div>
     </div>
 </div>
-
-

@@ -36,6 +36,16 @@
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\SLH.Feature.Location.Master_Debug.xml</ValidationSettingsFilePath>
     <SitecoreAccessGuid>5a4e5b89-07c0-4cd3-9262-be3e6b92e4da</SitecoreAccessGuid>
+    <PackageName>SLH.Location</PackageName>
+    <PackageAuthor>Santiago Morla - Juan Arias</PackageAuthor>
+    <PackagePublisher />
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -51,6 +61,12 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Location\SLH.Foundation.Location\SLH.Foundation.Location.Master.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Project\Web\SLH.Project.Web.Core\SLH.Project.Web.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\SLH.Feature.Location\SLH.Feature.Location.csproj">
       <Project>{f9907b46-fd02-48b7-aa97-afa6eff9e572}</Project>
       <Name>SLH.Feature.Location</Name>
@@ -181,6 +197,14 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\..\Foundation\Location\SLH.Foundation.Location\SLH.Foundation.Location.Master.scproj">
+      <ProjectId>{3e6b38e5-1bcd-437e-9f98-f234fbbf60d9}</ProjectId>
+    </BundledProject>
+    <BundledProject Include="..\..\..\Project\Web\SLH.Project.Web.Core\SLH.Project.Web.Core.scproj">
+      <ProjectId>{e250bf0f-6ff1-41c3-91c0-d4a1f75dab13}</ProjectId>
+    </BundledProject>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
