@@ -9,7 +9,7 @@
 ## Installation
 Please follow this instructions to install this module:
 
-1. Sitecore package - Location Map Module [package](resources/SLH.Location.zip)
+1. Sitecore package - Location Map Module [package](resources/MapLocationModule-1.0.zip)
 	- Use the Sitecore Installation Wizard to upload the package and install the module.
 	![InstallPackage](images/InstallPackage.png?raw=true "InstallPackage")
 	
