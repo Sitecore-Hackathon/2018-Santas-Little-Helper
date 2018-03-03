@@ -8,11 +8,14 @@
 
 ## Installation
 Please follow this instructions to install this module:
+
 1. Sitecore package - Location Map Module
 	- Use the Sitecore Installation Wizard to upload the package and install the module.
 	![InstallPackage](images/InstallPackage.png?raw=true "InstallPackage")
+	
 2. Publish Site
 	- Run a smart publish of the site
+	
 3. Verify the new feature was installed
 	- You will see two new options when you add features to a site
 		![SelectFeatures](images/SelectFeatures.png?raw=true "SelectFeatures")
