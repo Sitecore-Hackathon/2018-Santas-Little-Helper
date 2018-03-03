@@ -1,33 +1,37 @@
-# Documentation
+# Location Point of Interest Documentation
 
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
+![Location POI](images/LocationPOI.png?raw=true "Location POI")
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Sitecore Experience Accelerator SxA module
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+This module allows editors to easily add the common "**Point of Interest (POI)**" functionality to any page. The module displays a background image with some "pinpoints" defined in Sitecore, but dynamically using Sitecore Experience Accelerator (SxA) in order to allow the editor to preview the results in real time.
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
+Please make sure you have the following requirements installed:
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+- Sitecore 9.0 rev. 171219 (Update-1).
+- Sitecore Experience Accelerator Module, which requires:
+	- Sitecore PowerShell Extensions 4.7.2 for Sitecore 8/9
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
+Please follow this instructions to install this module:
 
 1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
-
+2. Publish
+3. Enable the Feature on your existing site:
+	1. Open Sitecore Content Editor
+	2. Select your site:
+	![SelectSite](images/SelectSite.png?raw=true "SelectSite")
+	3. Right click on your site, select **Scripts**, then **Add Site Feature**
+	![AddSiteFeature](images/AddSiteFeature.png?raw=true "AddSiteFeature")
+	4.  In the dialog, make sure you have selected **Location** and **Location Maps** then click OK
+	![FeatureLocation](images/FeatureLocation.png?raw=true "FeatureLocation")
+	5. 
+	
 ## Configuration
 
 How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
@@ -52,17 +56,7 @@ Remember you are using Markdown, you can provide code samples too:
 
 Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
-
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
+![POI](images/poi.png?raw=true "POI")
 
 ## Video
 
