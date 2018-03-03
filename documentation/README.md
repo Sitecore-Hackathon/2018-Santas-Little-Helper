@@ -21,7 +21,7 @@ Please make sure you have the following requirements installed:
 
 Please follow this instructions to install this module:
 
-1. Use the Sitecore Installation wizard to install the [package](resources/SLH.Location.zip)
+1. Use the Sitecore Installation wizard to install the [package](resources/MapLocationModule-1.0.zip)
 2. Publish site
 
 For more details, read our [Installation Guide](Installation_Guide.md)
