@@ -110,7 +110,11 @@ No file configurations are needed.
 
 ## Video
 
-Here is our presentation of this module.
+Here is our presentation of this module. 
 
-[direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-[Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+[direct link](resources/SCHackathon_2018.mp4) to the video, 
+
+Youtube:
+
+[![Sitecore Hackathon Video](https://img.youtube.com/vi/sffI8ac8hPU/0.jpg)](https://youtu.be/sffI8ac8hPU)
+
