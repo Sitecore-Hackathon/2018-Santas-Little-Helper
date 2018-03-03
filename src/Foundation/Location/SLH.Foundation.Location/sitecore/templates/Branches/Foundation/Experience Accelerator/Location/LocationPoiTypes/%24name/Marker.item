@@ -2,9 +2,9 @@
 version: 1
 id: {F41E3B82-86B6-4283-A87F-A302A2E78975}
 database: master
-path: /sitecore/templates/Branches/Foundation/Experience Accelerator/Location/LocationPoiTypes/$name/Simple POI
+path: /sitecore/templates/Branches/Foundation/Experience Accelerator/Location/LocationPoiTypes/$name/Marker
 parent: {C874AC45-8D17-48BB-B6C4-2C1EBADCF72B}
-name: Simple POI
+name: Marker
 master: {00000000-0000-0000-0000-000000000000}
 template: {F04F0F51-0FD2-4315-87F7-788E889A50F7}
 templatekey: Location POI Type
@@ -20,7 +20,7 @@ fa-map-marker
 ----version----
 language: en
 version: 1
-revision: 60a4925b-837b-46a6-9553-d5ef9e605c37
+revision: 176c5758-11ff-499c-b965-de86d353a064
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -49,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-60a4925b-837b-46a6-9553-d5ef9e605c37
+176c5758-11ff-499c-b965-de86d353a064
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20180303T035938Z
+20180303T052841Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

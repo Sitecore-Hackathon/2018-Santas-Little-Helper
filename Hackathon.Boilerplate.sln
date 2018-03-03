@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
 EndProject
@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		.gitignore = .gitignore
 		nuget.config = nuget.config
 		README.md = README.md
+		TdsGlobal.config = TdsGlobal.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}"
@@ -36,6 +37,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Feature.Location", "src\Feature\Location\SLH.Feature.Location\SLH.Feature.Location.csproj", "{F9907B46-FD02-48B7-AA97-AFA6EFF9E572}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SLH.Foundation.Location.Master", "src\Foundation\Location\SLH.Foundation.Location\SLH.Foundation.Location.Master.scproj", "{3E6B38E5-1BCD-437E-9F98-F234FBBF60D9}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SLH.Project.Web.Core", "src\Project\Web\SLH.Project.Web.Core\SLH.Project.Web.Core.scproj", "{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +62,12 @@ Global
 		{3E6B38E5-1BCD-437E-9F98-F234FBBF60D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E6B38E5-1BCD-437E-9F98-F234FBBF60D9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3E6B38E5-1BCD-437E-9F98-F234FBBF60D9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +78,7 @@ Global
 		{28D8BDCE-AE98-4545-89C8-F7FCB33BC9B9} = {269AB786-E69D-429A-9652-A4C9852A3CF8}
 		{F9907B46-FD02-48B7-AA97-AFA6EFF9E572} = {269AB786-E69D-429A-9652-A4C9852A3CF8}
 		{3E6B38E5-1BCD-437E-9F98-F234FBBF60D9} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{E250BF0F-6FF1-41C3-91C0-D4A1F75DAB13} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}

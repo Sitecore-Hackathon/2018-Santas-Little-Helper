@@ -1,30 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Sitecore.Mvc.Presentation;
 
 namespace SLH.Feature.Location.Controllers
 {
     public class LocationController : Controller
     {
-        public ActionResult Index()
+        public ActionResult LocationMap()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            var model = RenderingContext.Current.Rendering.Item;
+            return View(model);
         }
     }
 }
