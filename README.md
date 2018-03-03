@@ -1,5 +1,5 @@
 
-# Santa's Little Helper - Location Point of Interest Module
+# Location Map - Point of Interest Module
 
 ![Location POI](documentation/images/LocationPOI.png?raw=true "Location POI")
 
