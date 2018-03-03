@@ -21,7 +21,7 @@ Please make sure you have the following requirements installed:
 
 Please follow this instructions to install this module:
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
+1. Use the Sitecore Installation wizard to install the [package](resources/SLH.Location.zip)
 2. Publish site
 
 For more details, read our [Installation Guide](Installation_Guide.md)
@@ -60,7 +60,8 @@ No file configurations are needed.
 1. Once you have a SXA site, you will find some content items required to manage the module.
 
 ![POI](images/ExperienceEditor5.png?raw=true "POI")
-	- Here you will see the Location maps you manage on your site, same as points of interests. 
+
+- Here you will see the Location maps you manage on your site, same as points of interests. 
 
 2. If you take a look closer to the Location POI item, it has a Type which by default is **Marker** 
 
@@ -69,8 +70,9 @@ No file configurations are needed.
 3. In order to manage all the types of the POIs, go to */sitecore/content/tenant/site/Presentation/POI Types* and create a POI Type
 
 ![PoiTypeSetup](images/PoiTypeSetup.png?raw=true "PoiTypeSetup")
-	- You need to add a class base on Font Awesome class name, eg. fa-map-pin. 
-	- You can create as many you need. 
+
+- You need to add a class base on Font Awesome class name, eg. fa-map-pin. 
+- You can create as many you need. 
 
 ### Experience Editor
 
@@ -94,15 +96,15 @@ No file configurations are needed.
 
 ![POI](images/ExperienceEditor51.png?raw=true "POI")
 
-You will see the points of interest of the map as children of the item
+6. You will see the points of interest of the map as children of the item
 
 ![POI](images/ExperienceEditor5.png?raw=true "POI")
 
-You have to select which point of interest you want to manage in the component by using the treelist of the map item
+7. You have to select which point of interest you want to manage in the component by using the treelist of the map item
 
 ![POI](images/ExperienceEditor6.png?raw=true "POI")
 
-7. Once you create a POI you have to save your changes and the item will be available for you to edit it and place it wherever you need. 
+8. Once you create a POI you have to save your changes and the item will be available for you to edit it and place it wherever you need. 
 
 ![POI](images/ExperienceEditor7.png?raw=true "POI")
 

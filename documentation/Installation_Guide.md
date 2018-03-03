@@ -9,7 +9,7 @@
 ## Installation
 Please follow this instructions to install this module:
 
-1. Sitecore package - Location Map Module
+1. Sitecore package - Location Map Module [package](resources/SLH.Location.zip)
 	- Use the Sitecore Installation Wizard to upload the package and install the module.
 	![InstallPackage](images/InstallPackage.png?raw=true "InstallPackage")
 	
@@ -20,7 +20,9 @@ Please follow this instructions to install this module:
 	- You will see two new options when you add features to a site
 		![SelectFeatures](images/SelectFeatures.png?raw=true "SelectFeatures")
 		
-> Note: No file configurations are required
+> Note: No additional file configurations are required.
+
+> You can also install using the Installation Update Wizard and this file: [package](resources/SLH.Location.update)
 
 
 
