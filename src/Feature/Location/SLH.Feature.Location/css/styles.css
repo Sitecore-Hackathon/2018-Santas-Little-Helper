@@ -48,7 +48,7 @@
 }
 
 .poi-map__poi-title {
-    display: inline-block;
+    display: block;
     color: #e24949;
     font-size: 1.2em;
 }
